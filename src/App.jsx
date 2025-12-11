@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const STORAGE_KEY = "todo-app"
+const STORAGE_KEY = 'todos-app'
 
 function App() {
   // szűrő belső állapota
@@ -12,7 +12,7 @@ function App() {
       const stored = localStorage.getItem(STORAGE_KEY)
       return stored ? JSON.parse(stored) : []
     } catch (error) {
-      console.log(`Hiba a localstorage beolvasásakor: ${error}`)
+      console.log(`Hiba a localstorage beolvasásakor: ${error}`);
       return []
     }
   }) // alapértelemezet belső állapot egy üres tömb, ha bekerül egy todo, akkor a tömb növekedik, ha törlünk egy todo-t, akkor pedig csökken
