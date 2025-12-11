@@ -10,5 +10,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/todo-app/',
+  base: '/todo_app/',
 })
